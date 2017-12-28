@@ -1,0 +1,37 @@
+{
+  "name": "book-canon",
+  "version": "1.0.0",
+  "description": "This repository is used for book canon recommendatation in Hub.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tw-techops-connect/book-canon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tw-techops-connect/book-canon/issues"
+  },
+  "homepage": "https://github.com/tw-techops-connect/book-canon#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "jsx-loader": "^0.13.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {}
+}
