@@ -20,9 +20,9 @@ class MessageList extends React.Component {
 				arr.push(<li key={em}> {em} </li>);
 			});
 		return <section className="pageContentInner">
-			<div className="head-section"><h1{arr}>MessageList: </h1></div>
+			<div className="head-section"><h1>MessageList: </h1></div>
       <ul>
-
+        {arr}
       </ul>
 		</section>;
 	}
