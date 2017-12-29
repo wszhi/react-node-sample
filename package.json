@@ -7,8 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint server && eslint client"
   },
+  "eslintIgnore": ["client/static/output/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tw-techops-connect/book-canon.git"
@@ -33,5 +35,8 @@
     "style-loader": "^0.19.1",
     "webpack": "^1.13.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.14.0"
+  }
 }

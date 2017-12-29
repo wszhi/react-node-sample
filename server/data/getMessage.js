@@ -1,12 +1,12 @@
 var MessageList = [
 
-{ "Message":"Hello React"},
+	{"Message": "Hello React"},
 
-{ "Message":"Hello Webpack"},
+	{"Message": "Hello Webpack"},
 
-{ "Message":"Hello Nodejs"},
+	{"Message": "Hello Nodejs"},
 
-{ "Message":"Hello Express"}
+	{"Message": "Hello Express"}
 
 ];
 

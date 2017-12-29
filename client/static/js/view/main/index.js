@@ -1,6 +1,6 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var store = require('../../store/main');
+var React = require("react");
+var ReactDOM = require("react-dom");
+var store = require("../../store/main");
 
 class MessageList extends React.Component {
 	constructor(props) {
@@ -12,39 +12,37 @@ class MessageList extends React.Component {
 	}
 
 	render() {
-        var self = this;
-        var messages = this.state.messageList;
-        var arr = [];
+		var messages = this.state.messageList;
+		var arr = [];
 
-        messages
-        .forEach(function(em) {
-            arr.push(<li key={em}> {em} </li>);
-        });
+		messages
+			.forEach(function (em) {
+				arr.push(<li key={em}> {em} </li>);
+			});
 		return <section className="pageContentInner">
-            <div className="head-section"><h1>MessageList: </h1></div>
-            <ul>
-                {arr}
-            </ul>
-        </section>;
+			<div className="head-section"><h1{arr}>MessageList: </h1></div>
+      <ul>
+
+      </ul>
+		</section>;
 	}
 
 	getData() {
-        var self = this;
-        store
-        .getAllData(function (data) {
-        	var i = 0;
-        	var len = data.length;
-        	var messageListArr = [];
-        	for(; i<len; i++) {
-        		messageListArr[i] = data[i].Message;
-        	}
-        	self.setState({messageList: messageListArr});
-        	console.log(self.state.messageList);
-        })
-    }
+		var self = this;
+		store
+			.getAllData(function (data) {
+				var i = 0;
+				var len = data.length;
+				var messageListArr = [];
+				for (; i < len; i++) {
+					messageListArr[i] = data[i].Message;
+				}
+				self.setState({messageList: messageListArr});
+			});
+	}
 }
 
 ReactDOM.render(
-  <MessageList />,
-  document.getElementById('main-container')
+	<MessageList/>,
+	document.getElementById("main-container")
 );
